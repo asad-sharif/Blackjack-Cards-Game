@@ -1,0 +1,86 @@
+/* Main styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e101c;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 80%; /* Adjusted for better proportion */
+    max-width: 500px; /* Maximum width */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(28, 31, 46, 0.9); /* Semi-transparent background */
+}
+
+/* Cards styling */
+#cards {
+    background-color: #2b2e3d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex; /* Changed to flex to prevent stacking */
+    flex-wrap: wrap; /* Wrap cards to next line */
+    justify-content: center; /* Center cards horizontally */
+}
+
+/* Buttons styling */
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap buttons to next line on small screens */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e528a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Added margin for spacing */
+}
+
+button:hover {
+    background-color: #6c70a6;
+}
+
+button:disabled {
+    background-color: #3e415c;
+    cursor: not-allowed;
+}
+#cards img{
+    width: 30%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* Increased width for smaller screens */
+    }
+
+    #cards {
+        justify-content: space-around; /* Space cards evenly */
+    }
+
+    button {
+        width: 48%; /* Adjust button width for smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+/* Add additional media queries as needed for finer control */
